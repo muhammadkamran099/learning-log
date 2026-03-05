@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    {% extends "learning_logs/base.html" %} {% block content %}
+    <h2>You have been logged out.</h2>
+    <p>Thank you for visiting Learning Log.</p>
+    <p>
+      <a href="{% url 'login' %}">Log in again</a>
+    </p>
+    {% endblock content %}
+  </body>
+</html>
